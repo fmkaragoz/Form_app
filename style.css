@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/ocean.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+/* header başlangıç */
+.header{
+    background-color: rgba(172, 159, 159, 0.475);
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.title{
+    color: rgb(229, 215, 215);
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.title span{
+    color: red;
+}
+.nav ul li{
+    list-style-type: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 30px;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(244, 83, 83);
+}
+.nav ul li a:hover{
+    color: rgb(65, 45, 45);
+}
+/* header bitiş */
+/* ana içerik başlangıç */
+.main{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.main .info{
+    height: 150%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.main .info h1{
+    color: chocolate;
+}
+.main .info p{
+    color: rgb(208, 196, 196);
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.main .info p b{
+    color: brown;
+    text-transform: capitalize;
+}
+.main .info button{
+    border: none;
+    background-color: rgb(190, 72, 72);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main .info button:hover{
+    background-color: rgba(162, 42, 42, 0.654);
+    font-size: 15px;
+}
+/* ana içerik bitiş */
+/* table alanı başlangıç */
+.table-container{
+    width: 70%;
+    padding: 150px;
+    margin: 20px auto;
+}
+.table-container table{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    border: 1px solid gray;
+    color: aliceblue;
+}
+th{
+    background-color: rgb(167, 138, 138);
+}
+/* table alanı bitiş */
+/* form alanı başlangıç */
+.form-alani{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-top: 100px;
+    background-color: rgb(214, 206, 206);
+    border-radius: 5px;
+}
+#ad, #mail, textarea{
+    width: 97%;
+    padding: 10px ;
+    border: 1px solid rgb(137, 39, 39);
+    border-radius: 8px;
+}
+.btn{
+    background-color: rgb(66, 66, 163);
+    color: white;
+    width: 70px;
+    height: 4-0px;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    font-size: 15px;
+    background-color: rgb(85, 85, 224);
+}
+/* form alanı bitiş */
+/* footer alanı başlangıç */
+.foot{
+    background-color: rgb(71, 63, 63);
+    color: white;
+    height: 100px;
+    font-size: 18px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer alanı bitiş */
+/* responsive alanı başlangıç */
+@media (max-width: 600px) {
+        .header .nav{
+            display: none;
+        } 
+        .form-alani, .table-container{
+            width: 50%;
+        }
+        .main{
+            width: 95%;
+        }
+        .foot{
+            width: 100%;
+        }
+}
+/* responsive alanı bitiş */
